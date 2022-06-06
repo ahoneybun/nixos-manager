@@ -1,4 +1,4 @@
-{ pkgs, compiler ? "ghc883" }:
+{ pkgs, compiler ? "ghc884" }:
 
 let
   gitignore = pkgs.nix-gitignore.gitignoreSourcePure [ ./.gitignore ];
