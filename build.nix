@@ -20,7 +20,7 @@ let
           buildTools = drv.buildTools or [] ++ [ pkgs.makeWrapper ];
           postFixup = ''
             wrapProgram $out/bin/nixos-manager \
-            --prefix PATH : "${pkgs.lib.makeBinPath [pkgs.gksu]}"
+            --prefix PATH : "${pkgs.lib.makeBinPath [pkgs.pkexec]}"
           '';
         });
     };
